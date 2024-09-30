@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
+    
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">    
+
+</head>
+<body>
+    <!-- Block Element Modifier -->
+<div class="app">
+    <header class="header">
+        <div class="grid">
+
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item-has-qr header__navbar-item--separate">  
+                        Vào cửa hàng trên ứng dụng dnt98-shop  
+                        <div class="header__qr">  
+                            <img src="./assets/image/QR1.png" alt="QR code" class="header__qr-img">  
+                            <div class="header__qr-apps">  
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/image/QR2.png" alt="appstore" class="header__qr-dowload-img">  
+                                </a>
+                                
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/image/QR3.png" alt="googleplay" class="header__qr-dowload-img"> 
+                                </a>
+
+                            </div>  
+                        </div>  
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__navbar-title--no-pointer">Kết nối</span>
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-brands fa-facebook"></i> 
+                        </a> 
+                       
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+    
+                </ul> 
+                
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-bell"></i>
+                            Thông báo
+                        </a>
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>Thông báo mới nhận</h3>
+                            </header>
+                            <ul class="header__notify-list">
+                                <li class="header_notify-item">
+                                    <a href="header__notify-link">
+                                        <img src="data:image/png;base64,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" alt="java" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                            <span class="header__notify-descriotion">Mô tả chính hãng</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-brands fa-hire-a-helper"></i>
+                            Trợ giúp</a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng kí</li>
+                    <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contairt">
+
+    </div>
+
+    <footer class="fooot">
+
+    </footer>
+</div>
+</body>
+</html> 
